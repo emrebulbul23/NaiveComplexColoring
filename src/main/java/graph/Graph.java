@@ -80,6 +80,14 @@ public class Graph {
         }
     }
 
+    public void complexColoring(int iteration){
+        for (int i = 0; i < iteration; i++) {
+            complexColoringInputStep();
+            complexColoringOutputStep();
+        }
+    }
+
+
     public void complexColoringInputStep() {
         for (int i = 0; i < n; i++) {
             for (Edge e : edgeList) {
